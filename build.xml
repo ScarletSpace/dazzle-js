@@ -1,0 +1,14 @@
+<project name="dazzle" basedir=".">
+    <property name="src" location="src"/>
+    <property name="build" location="build"/>
+    <target name="build">
+        <concat destfile="${build}\dazzle.js">
+            <filelist dir="${src}" files="
+        dazzle.js"/>
+            <filelist dir="${src}\module" files="
+        animation.js"/>
+            <filelist dir="${src}\object" files="
+        placeholder.js"/>
+        </concat>
+    </target>
+</project>
